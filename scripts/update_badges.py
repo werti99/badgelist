@@ -6,9 +6,9 @@ import requests
 
 
 # GitHub-Repository mit den HuBBa-Badge-Dateien
-GITHUB_TREE_URL = (
+GITHUB_REPO_API = (
     "https://api.github.com/repos/"
-    "IlIllllllIIIlIIl/hubba-files/git/trees/main?recursive=1"
+    "IlIllllllIIIlIIl/hubba-files"
 )
 
 # HuBBa API für die Umlaufzahl
