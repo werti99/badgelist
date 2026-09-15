@@ -9,134 +9,116 @@ GITHUB_REPO_API = (
     "IlIllllllIIIlIIl/hubba-files"
 )
 
+BADGE_API_URL = "https://json.hubba.cc/badges.php"
+
 OUTPUT_FILE = Path("data/badges.json")
 
+# Nur für diesen Test
+TEST_CODES = [
+    "ADM",
+    "BAZ10",
+    "001IT",
+    "0404C",
+    "14HUBBA",
+]
 
-def get_badge_codes():
-    """Liest alle Badge-Codes aus images/album1584."""
 
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "User-Agent": "hubba-badges-updater",
-    }
+def get_badge_amount(code):
+    """Fragt die Umlaufzahl eines Badges ab.
 
-    print("1. Verbinde mit GitHub...", flush=True)
-
-    repo_response = requests.get(
-        GITHUB_REPO_API,
-        timeout=15,
-        headers=headers,
-    )
-
-    repo_response.raise_for_status()
-
-    repo_data = repo_response.json()
-    default_branch = repo_data["default_branch"]
+    Rückgabe:
+        int  -> API hat eine gültige Zahl geliefert
+        0    -> API meldet ausdrücklich 0
+        None -> API konnte keinen gültigen Wert liefern
+    """
 
     print(
-        f"2. Default-Branch: {default_branch}",
+        f"Frage Umlaufzahl für {code} ab...",
         flush=True,
     )
 
-    tree_url = (
-        f"{GITHUB_REPO_API}/git/trees/"
-        f"{default_branch}?recursive=1"
-    )
-
-    print("3. Lade Repository-Dateibaum...", flush=True)
-
-    response = requests.get(
-        tree_url,
-        timeout=60,
-        headers=headers,
-    )
-
-    response.raise_for_status()
-
-    data = response.json()
-
-    print(
-        f"4. GitHub liefert {len(data.get('tree', []))} Einträge.",
-        flush=True,
-    )
-
-    badge_codes = []
-
-    for item in data.get("tree", []):
-        path = item.get("path", "")
-
-        if not path.startswith("images/album1584/"):
-            continue
-
-        if not path.lower().endswith(".gif"):
-            continue
-
-        filename = Path(path).name
-        code = filename[:-4]
-
-        if code:
-            badge_codes.append(code)
-
-    badge_codes = sorted(
-        set(badge_codes),
-        key=str.lower,
-    )
-
-    return badge_codes
-
-
-def save_badges(badge_codes):
-    """Speichert alle Badge-Codes als JSON."""
-
-    badges = []
-
-    for code in badge_codes:
-        badges.append(
-            {
-                "code": code,
-                "amount": None,
-            }
+    try:
+        response = requests.get(
+            BADGE_API_URL,
+            params={"name": code},
+            timeout=15,
+            headers={
+                "User-Agent": "hubba-badges-updater",
+            },
         )
 
-    OUTPUT_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    with OUTPUT_FILE.open(
-        "w",
-        encoding="utf-8",
-    ) as file:
-        json.dump(
-            badges,
-            file,
-            ensure_ascii=False,
-            indent=2,
+        print(
+            f"  HTTP {response.status_code}",
+            flush=True,
         )
 
-        file.write("\n")
+        response.raise_for_status()
+
+        data = response.json()
+
+        print(
+            f"  API-Antwort: {data}",
+            flush=True,
+        )
+
+        # Wichtig:
+        # None bleibt None.
+        # 0 bleibt 0.
+        amount = data.get("total_amount")
+
+        if amount is None:
+            print(
+                "  -> Ergebnis: null",
+                flush=True,
+            )
+            return None
+
+        amount = int(amount)
+
+        print(
+            f"  -> Ergebnis: {amount}",
+            flush=True,
+        )
+
+        return amount
+
+    except Exception as error:
+        print(
+            f"  -> Fehler: {error}",
+            flush=True,
+        )
+
+        return None
 
 
 def main():
-    print("Badge-Update gestartet.", flush=True)
+    print("Umlaufzahl-Test gestartet.", flush=True)
+    print("", flush=True)
 
-    badge_codes = get_badge_codes()
+    results = []
 
-    print(
-        f"5. Insgesamt {len(badge_codes)} Badge-Codes gefunden.",
-        flush=True,
-    )
+    for code in TEST_CODES:
+        amount = get_badge_amount(code)
 
-    print("6. Erstelle badges.json...", flush=True)
+        results.append(
+            {
+                "code": code,
+                "amount": amount,
+            }
+        )
 
-    save_badges(badge_codes)
+        print("", flush=True)
 
-    print(
-        f"7. {OUTPUT_FILE} wurde erfolgreich erstellt.",
-        flush=True,
-    )
+    print("Ergebnisse:", flush=True)
 
-    print("Badge-Update erfolgreich!", flush=True)
+    for badge in results:
+        print(
+            f"{badge['code']}: {badge['amount']}",
+            flush=True,
+        )
+
+    print("", flush=True)
+    print("Test erfolgreich.", flush=True)
 
 
 if __name__ == "__main__":
