@@ -1,11 +1,15 @@
-import requests
+import json
 from pathlib import Path
+
+import requests
 
 
 GITHUB_REPO_API = (
     "https://api.github.com/repos/"
     "IlIllllllIIIlIIl/hubba-files"
 )
+
+OUTPUT_FILE = Path("data/badges.json")
 
 
 def get_badge_codes():
@@ -16,7 +20,6 @@ def get_badge_codes():
         "User-Agent": "hubba-badges-updater",
     }
 
-    # Repository-Informationen abrufen
     print("1. Verbinde mit GitHub...", flush=True)
 
     repo_response = requests.get(
@@ -35,7 +38,6 @@ def get_badge_codes():
         flush=True,
     )
 
-    # Git Tree abrufen
     tree_url = (
         f"{GITHUB_REPO_API}/git/trees/"
         f"{default_branch}?recursive=1"
@@ -70,8 +72,6 @@ def get_badge_codes():
             continue
 
         filename = Path(path).name
-
-        # .gif entfernen
         code = filename[:-4]
 
         if code:
@@ -85,8 +85,40 @@ def get_badge_codes():
     return badge_codes
 
 
+def save_badges(badge_codes):
+    """Speichert alle Badge-Codes als JSON."""
+
+    badges = []
+
+    for code in badge_codes:
+        badges.append(
+            {
+                "code": code,
+                "amount": None,
+            }
+        )
+
+    OUTPUT_FILE.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    with OUTPUT_FILE.open(
+        "w",
+        encoding="utf-8",
+    ) as file:
+        json.dump(
+            badges,
+            file,
+            ensure_ascii=False,
+            indent=2,
+        )
+
+        file.write("\n")
+
+
 def main():
-    print("Badge-Code-Test gestartet.", flush=True)
+    print("Badge-Update gestartet.", flush=True)
 
     badge_codes = get_badge_codes()
 
@@ -95,20 +127,16 @@ def main():
         flush=True,
     )
 
-    print("", flush=True)
-    print("Erste 20 Badges:", flush=True)
+    print("6. Erstelle badges.json...", flush=True)
 
-    for code in badge_codes[:20]:
-        print(f"  - {code}", flush=True)
+    save_badges(badge_codes)
 
-    print("", flush=True)
-    print("Letzte 20 Badges:", flush=True)
+    print(
+        f"7. {OUTPUT_FILE} wurde erfolgreich erstellt.",
+        flush=True,
+    )
 
-    for code in badge_codes[-20:]:
-        print(f"  - {code}", flush=True)
-
-    print("", flush=True)
-    print("Badge-Code-Test erfolgreich!", flush=True)
+    print("Badge-Update erfolgreich!", flush=True)
 
 
 if __name__ == "__main__":
