@@ -1,4 +1,5 @@
 import json
+import subprocess
 import time
 from pathlib import Path
 
@@ -16,17 +17,19 @@ BADGE_PATH = "images/album1584"
 
 OUTPUT_FILE = Path("data/badges.json")
 
-# Maximal so lange pro GitHub-Action-Lauf arbeiten.
-# Danach wird der Fortschritt gespeichert und am nächsten Tag fortgesetzt.
+# Nach wie vielen Badges gespeichert + committed wird
+COMMIT_EVERY = 500
+
+# Maximale Laufzeit dieses GitHub-Action-Jobs
 MAX_RUNTIME_SECONDS = 5 * 60 * 60
 
-# Normale Pause zwischen erfolgreichen Anfragen.
+# Kleine Pause zwischen erfolgreichen Requests
 REQUEST_DELAY = 0.5
 
-# Bei 429 mindestens so lange warten.
+# Wartezeit bei HTTP 429
 RATE_LIMIT_WAIT = 60
 
-# Maximale Anzahl Versuche bei einem Badge.
+# Maximale Versuche bei Fehlern
 MAX_RETRIES = 10
 
 
@@ -120,11 +123,20 @@ def load_existing_data():
         ) as file:
             data = json.load(file)
 
-        return {
-            badge["code"]: badge
-            for badge in data
-            if "code" in badge
-        }
+        result = {}
+
+        for badge in data:
+            if "code" not in badge:
+                continue
+
+            # Alte badges.json hatte noch kein "checked".
+            # Diese werden deshalb als noch nicht geprüft behandelt.
+            if "checked" not in badge:
+                badge["checked"] = False
+
+            result[badge["code"]] = badge
+
+        return result
 
     except Exception as error:
         print(
@@ -161,8 +173,87 @@ def save_data(data):
         )
 
 
+def git_commit_and_push():
+    print(
+        "   → Speichere Zwischenstand auf GitHub...",
+        flush=True,
+    )
+
+    subprocess.run(
+        [
+            "git",
+            "config",
+            "user.name",
+            "github-actions[bot]",
+        ],
+        check=True,
+    )
+
+    subprocess.run(
+        [
+            "git",
+            "config",
+            "user.email",
+            "41898282+github-actions[bot]@users.noreply.github.com",
+        ],
+        check=True,
+    )
+
+    subprocess.run(
+        [
+            "git",
+            "add",
+            "data/badges.json",
+        ],
+        check=True,
+    )
+
+    # Prüfen, ob tatsächlich Änderungen vorhanden sind
+    result = subprocess.run(
+        [
+            "git",
+            "diff",
+            "--cached",
+            "--quiet",
+        ]
+    )
+
+    if result.returncode == 0:
+        print(
+            "   → Keine Änderungen.",
+            flush=True,
+        )
+        return
+
+    subprocess.run(
+        [
+            "git",
+            "commit",
+            "-m",
+            "Update badge data",
+        ],
+        check=True,
+    )
+
+    subprocess.run(
+        [
+            "git",
+            "push",
+        ],
+        check=True,
+    )
+
+    print(
+        "   → Zwischenstand erfolgreich gepusht.",
+        flush=True,
+    )
+
+
 def get_badge_amount(code):
-    for attempt in range(1, MAX_RETRIES + 1):
+    for attempt in range(
+        1,
+        MAX_RETRIES + 1,
+    ):
 
         try:
             response = requests.get(
@@ -176,7 +267,7 @@ def get_badge_amount(code):
                 },
             )
 
-            # Rate Limit
+            # HTTP 429 = zu viele Anfragen
             if response.status_code == 429:
 
                 retry_after = response.headers.get(
@@ -209,17 +300,20 @@ def get_badge_amount(code):
             api_code = data.get("badge_code")
             amount = data.get("total_amount")
 
-            # Die API bestätigt diesen Badge nicht.
+            # WICHTIG:
             #
-            # Wichtig:
-            # Das ist NICHT dasselbe wie ein bestätigter
-            # Badge mit total_amount = 0.
+            # badge_code muss tatsächlich unserem
+            # angefragten Code entsprechen.
+            #
+            # badge_code: null bedeutet NICHT Umlauf 0.
             if api_code != code:
                 return None, True
 
+            # Badge bestätigt, aber keine Zahl geliefert
             if amount is None:
                 return None, True
 
+            # Bestätigter Badge mit 0 bleibt 0
             return int(amount), True
 
         except Exception as error:
@@ -230,6 +324,7 @@ def get_badge_amount(code):
             )
 
             if attempt < MAX_RETRIES:
+
                 wait_seconds = min(
                     10 * attempt,
                     120,
@@ -244,6 +339,15 @@ def get_badge_amount(code):
                 time.sleep(wait_seconds)
 
             else:
+                print(
+                    f"   {code} konnte nach "
+                    f"{MAX_RETRIES} Versuchen "
+                    f"nicht abgefragt werden.",
+                    flush=True,
+                )
+
+                # Nicht als checked markieren.
+                # Wird beim nächsten Lauf erneut versucht.
                 return None, False
 
     return None, False
@@ -266,18 +370,18 @@ def main():
     )
 
     # --------------------------------------------------
-    # Badge-Codes holen
+    # Badge-Codes laden
     # --------------------------------------------------
 
     codes = get_badge_codes()
 
     # --------------------------------------------------
-    # Bestehende Daten laden
+    # Bestehenden Cache laden
     # --------------------------------------------------
 
     data = load_existing_data()
 
-    # Alle gefundenen Codes sicherstellen
+    # Neue Codes hinzufügen
     for code in codes:
 
         if code not in data:
@@ -287,10 +391,7 @@ def main():
                 "checked": False,
             }
 
-        elif "checked" not in data[code]:
-            data[code]["checked"] = False
-
-    # Alte Codes entfernen, die nicht mehr im Repository existieren
+    # Nicht mehr vorhandene Codes entfernen
     code_set = set(codes)
 
     data = {
@@ -300,27 +401,21 @@ def main():
     }
 
     # --------------------------------------------------
-    # Startposition bestimmen
+    # Position bestimmen
     # --------------------------------------------------
 
-    start_index = 0
+    unchecked_codes = [
+        code
+        for code in codes
+        if not data[code].get("checked", False)
+    ]
 
-    for index, code in enumerate(codes):
-
-        if not data[code].get("checked", False):
-            start_index = index
-            break
-
-    else:
-        # Alle wurden bereits einmal abgefragt.
-        # Neuer kompletter Durchlauf.
-        start_index = 0
-
-        for code in codes:
-            data[code]["checked"] = False
+    # Wenn alle geprüft wurden:
+    # neuen kompletten Durchlauf beginnen.
+    if not unchecked_codes:
 
         print(
-            "Alle Badges wurden bereits abgefragt.",
+            "Alle Badges wurden bereits geprüft.",
             flush=True,
         )
 
@@ -329,25 +424,28 @@ def main():
             flush=True,
         )
 
+        for code in codes:
+            data[code]["checked"] = False
+
+        unchecked_codes = codes
+
+    first_code = unchecked_codes[0]
+
+    print(
+        f"Starte bei: {first_code}",
+        flush=True,
+    )
+
     # --------------------------------------------------
     # Badges abfragen
     # --------------------------------------------------
 
-    print(
-        f"Starte bei Badge "
-        f"{start_index + 1} / {len(codes)}: "
-        f"{codes[start_index]}",
-        flush=True,
-    )
+    processed_since_commit = 0
+    total_processed = 0
 
-    processed = 0
+    for code in unchecked_codes:
 
-    for index in range(
-        start_index,
-        len(codes),
-    ):
-
-        # Laufzeit prüfen
+        # Laufzeit kontrollieren
         elapsed = time.time() - start_time
 
         if elapsed >= MAX_RUNTIME_SECONDS:
@@ -357,6 +455,9 @@ def main():
                 flush=True,
             )
 
+            save_data(data)
+            git_commit_and_push()
+
             print(
                 "Fortschritt wurde gespeichert.",
                 flush=True,
@@ -364,68 +465,80 @@ def main():
 
             break
 
-        code = codes[index]
-
         amount, successful = get_badge_amount(
             code
         )
 
-        # Nur bei erfolgreicher Anfrage als
-        # abgefragt markieren.
         if successful:
 
             data[code]["amount"] = amount
             data[code]["checked"] = True
 
-        # Bei einem temporären Fehler NICHT als
-        # erfolgreich abgefragt markieren.
-        #
-        # Dadurch wird der Badge beim nächsten
-        # Lauf erneut versucht.
+        total_processed += 1
+        processed_since_commit += 1
 
-        processed += 1
+        # Alle 50 Fortschritt anzeigen
+        if total_processed % 50 == 0:
 
-        if processed % 50 == 0:
-
-            save_data(data)
+            checked = sum(
+                1
+                for badge in data.values()
+                if badge.get("checked", False)
+            )
 
             percentage = (
-                (index + 1) / len(codes)
+                checked / len(codes)
             ) * 100
 
             print(
                 f"   Fortschritt: "
-                f"{index + 1:,} / {len(codes):,} "
+                f"{checked:,} / {len(codes):,} "
                 f"({percentage:.1f} %)"
                 .replace(",", "."),
                 flush=True,
             )
 
-            print(
-                "   Zwischenstand gespeichert.",
-                flush=True,
-            )
+        # --------------------------------------------------
+        # Alle 500 Ergebnisse committen
+        # --------------------------------------------------
+
+        if processed_since_commit >= COMMIT_EVERY:
+
+            save_data(data)
+
+            git_commit_and_push()
+
+            processed_since_commit = 0
 
         time.sleep(REQUEST_DELAY)
 
-    # --------------------------------------------------
-    # Endgültig speichern
-    # --------------------------------------------------
+    else:
 
-    save_data(data)
+        # Alle Badges dieses Durchlaufs geschafft
+        save_data(data)
+        git_commit_and_push()
+
+        print(
+            "Alle Badges dieses Durchlaufs wurden geprüft.",
+            flush=True,
+        )
+
+    # --------------------------------------------------
+    # Statistik
+    # --------------------------------------------------
 
     checked = sum(
         1
-        for code in codes
-        if data[code].get("checked", False)
+        for badge in data.values()
+        if badge.get("checked", False)
     )
 
     available = sum(
         1
-        for code in codes
+        for badge in data.values()
         if (
-            data[code].get("checked", False)
-            and data[code].get("amount") is not None
+            badge.get("checked", False)
+            and badge.get("amount") is not None
         )
     )
 
@@ -442,12 +555,7 @@ def main():
     )
 
     print(
-        "Update beendet.",
-        flush=True,
-    )
-
-    print(
-        f"Abgefragt: "
+        f"Geprüft: "
         f"{checked:,} / {len(codes):,}"
         .replace(",", "."),
         flush=True,
