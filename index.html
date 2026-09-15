@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HuBBa Badges</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>HuBBa Badges</h1>
+
+    <p id="status">
+        Lade Badges...
+    </p>
+
+    <div class="controls">
+
+        <input
+            id="search"
+            type="text"
+            placeholder="Badge-Code suchen..."
+            autocomplete="off"
+        >
+
+        <select id="sort">
+
+            <option value="code-asc">
+                Code A → Z
+            </option>
+
+            <option value="code-desc">
+                Code Z → A
+            </option>
+
+            <option value="amount-desc">
+                Umlauf ↓
+            </option>
+
+            <option value="amount-asc">
+                Umlauf ↑
+            </option>
+
+        </select>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <div id="loading">
+        Badges werden geladen...
+    </div>
+
+    <div id="badges"></div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
