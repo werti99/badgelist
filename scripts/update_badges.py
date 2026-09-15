@@ -21,13 +21,35 @@ OUTPUT_FILE = Path("data/badges.json")
 def get_badge_codes():
     """Liest alle Badge-Codes aus dem GitHub-Repository."""
 
-    response = requests.get(
-        GITHUB_TREE_URL,
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "hubba-badges-updater",
+    }
+
+    # Zuerst den tatsächlichen Default-Branch ermitteln
+    repo_response = requests.get(
+        GITHUB_REPO_API,
         timeout=30,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "hubba-badges-updater",
-        },
+        headers=headers,
+    )
+
+    repo_response.raise_for_status()
+
+    repo_data = repo_response.json()
+    default_branch = repo_data["default_branch"]
+
+    print(f"Gefundener Default-Branch: {default_branch}")
+
+    # Anschließend den vollständigen Git-Tree dieses Branches laden
+    tree_url = (
+        f"{GITHUB_REPO_API}/git/trees/"
+        f"{default_branch}?recursive=1"
+    )
+
+    response = requests.get(
+        tree_url,
+        timeout=60,
+        headers=headers,
     )
 
     response.raise_for_status()
@@ -39,7 +61,6 @@ def get_badge_codes():
     for item in data.get("tree", []):
         path = item.get("path", "")
 
-        # Nur GIFs aus images/album1584 berücksichtigen
         if not path.startswith("images/album1584/"):
             continue
 
@@ -55,7 +76,10 @@ def get_badge_codes():
             badge_codes.append(code)
 
     # Doppelte Codes entfernen und alphabetisch sortieren
-    badge_codes = sorted(set(badge_codes), key=str.lower)
+    badge_codes = sorted(
+        set(badge_codes),
+        key=str.lower,
+    )
 
     return badge_codes
 
