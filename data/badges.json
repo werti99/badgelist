@@ -154792,46 +154792,46 @@
   {
     "code": "ZLD01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZLD02",
     "amount": 9,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZLD03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZOM01",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZOM02",
     "amount": 4,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZORO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZYKO",
     "amount": 19,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZYZ",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ZZZ",
     "amount": 198,
-    "checked": false
+    "checked": true
   }
 ]
