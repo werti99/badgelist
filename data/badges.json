@@ -81160,6 +81160,11 @@
     "checked": true
   },
   {
+    "code": "HWSC26",
+    "amount": 5,
+    "checked": true
+  },
+  {
     "code": "HWSCOUT",
     "amount": 10,
     "checked": true
@@ -109052,2497 +109057,2497 @@
   {
     "code": "O_23(1)",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_24",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_24.1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_24.1gif",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_24.2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_25",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_26",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_27",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_28",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_29",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_2l",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_2r",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_30",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_31",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_32",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_34",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_35",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_36",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_37",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_38",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_38.1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_38.2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_4",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_41",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_5",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_50",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_51",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_6",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_7",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "O_9",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OBA02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OBITO",
     "amount": 25,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OBITO2",
     "amount": 123,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ODR01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OF2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OFF01",
     "amount": 133,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OG",
     "amount": 30,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH4",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH5",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH6",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH7",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH8",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OH9",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC04",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC10",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC11",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC13",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC14",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC15",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC16",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC17",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC18",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC19",
     "amount": 46,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC20",
     "amount": 43,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC21",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC22",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC23",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC24",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC25",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC26",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC27",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC28",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC29",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC30",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC31",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC32",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC33",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC34",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OHC35",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OhW",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OILED",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL1",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL1_HHAU",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL1_HHCA",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL1_HHSG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL1_HHUK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL2",
     "amount": 79,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL2_HHAU",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL2_HHCA",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL2_HHSG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL2_HHUK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL3_HHAU",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL3_HHCA",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL3_HHSG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OL3_HHUK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLDBN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLDIES",
     "amount": 180,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY04",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY05",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY06",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OLY07",
     "amount": 123,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OMEGALUL",
     "amount": 51,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ON1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ON2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ON3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC02",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC27",
     "amount": 41,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC43",
     "amount": 54,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC45",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC49",
     "amount": 58,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC50",
     "amount": 58,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONC51",
     "amount": 54,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONEPIECE",
     "amount": 180,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONESTAR",
     "amount": 27,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ONK01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP1",
     "amount": 774,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP2",
     "amount": 205,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_AKAINU",
     "amount": 39,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_BIGMOM",
     "amount": 38,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_BORSALINO",
     "amount": 38,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_DRAGON",
     "amount": 40,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_GARP",
     "amount": 42,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_GECKOMORIA",
     "amount": 36,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_GOLDROGER",
     "amount": 40,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_KAIDO",
     "amount": 38,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_KUZAN",
     "amount": 39,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_MARCO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_MARSHALL",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP20_WEEVIL",
     "amount": 33,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP22_01",
     "amount": 44,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP22_02",
     "amount": 42,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP22_03",
     "amount": 36,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OP22_04",
     "amount": 41,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPG1",
     "amount": 44,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPG2",
     "amount": 45,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPG3",
     "amount": 43,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPG4",
     "amount": 44,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPGLUF",
     "amount": 40,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPM",
     "amount": 216,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPP",
     "amount": 48,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPS",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OPSHANKS",
     "amount": 26,
-    "checked": false
+    "checked": true
   },
   {
     "code": "ORANG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OST12",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OST122",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTEREIERSUCHE1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTEREIERSUCHE2",
     "amount": 50,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN1",
     "amount": 123,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN15",
     "amount": 183,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN21",
     "amount": 176,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN22",
     "amount": 150,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN23",
     "amount": 89,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN24",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN25",
     "amount": 168,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OSTERN3",
     "amount": 116,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OVO",
     "amount": 20,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OWG01",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OWN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OWNR",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OZAN",
     "amount": 28,
-    "checked": false
+    "checked": true
   },
   {
     "code": "OzanPower",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAC",
     "amount": 57,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PADRE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAIN",
     "amount": 31,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAINAK",
     "amount": 4,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAKISTAN",
     "amount": 6,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAL01",
     "amount": 3,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PALAESTINA",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PALLB",
     "amount": 8,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PALOKOS",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PANDA",
     "amount": 30,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PANDACUTE",
     "amount": 120,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PANS",
     "amount": 461,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAPI",
     "amount": 131,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR01",
     "amount": 12,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR02",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR04",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR05",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR06",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR08",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR09",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR10",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR11",
     "amount": 11,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR13",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR14",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR15",
     "amount": 13,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR16",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR17",
     "amount": 132,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR18",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAR_1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PARATAX",
     "amount": 68,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PARI",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PARLIASHINZO",
     "amount": 5,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PARR1",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PARR2",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PARR3",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS01",
     "amount": 412,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS02",
     "amount": 151,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS04",
     "amount": 86,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS05",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS06",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS07",
     "amount": 62,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS08",
     "amount": 78,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS11",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS13",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS14",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS15",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS16",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS17",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS18",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS19",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS20",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS21",
     "amount": 128,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS22",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS23",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS24",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS25",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS26",
     "amount": 121,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS27",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS28",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS29",
     "amount": 6,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS30",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS31",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS32",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS33",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS34",
     "amount": 33,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS35",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS36",
     "amount": 5,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS37",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS38",
     "amount": 38,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS39",
     "amount": 44,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS40",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS41",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS42",
     "amount": 10,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS43",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS44",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS45",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS46",
     "amount": 28,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS47",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAS48",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAT2",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PATCAT",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PATRICK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PATRL",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAULADRI",
     "amount": 3,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZO",
     "amount": 5022,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZOBD",
     "amount": 4,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZOHUBBA",
     "amount": 6,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZOOO",
     "amount": 458,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZOPORK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZOSDT",
     "amount": 44,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZOSENSELESS",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZSENS",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PAZU",
     "amount": 9,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PB1",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PB2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PB2_HHUK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PBB21",
     "amount": 29,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PBC01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PDF",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PDJ",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PDW1",
     "amount": 127,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PEDO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PEG01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PEPSI",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET01",
     "amount": 171,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET02",
     "amount": 156,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET03",
     "amount": 8,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET05",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET06",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET07",
     "amount": 153,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET10",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET11",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET12",
     "amount": 3,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET13",
     "amount": 4,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET14",
     "amount": 5,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET14_LION",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET15",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET15_TURTLE",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PET16_MONKEY",
     "amount": 24,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PEWDIEPIE",
     "amount": 8,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PEWPEW",
     "amount": 58,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PEXTRA",
     "amount": 387,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PFLEIHA1",
     "amount": 11,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PFT67",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PFT68",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PFT69",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PFT70",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PFT71",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PGN01",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PGN02",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PGN03",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PGOLD",
     "amount": 34,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PHELPER",
     "amount": 23,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PHF",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PHIL",
     "amount": 3,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PHILCHLOE",
     "amount": 5,
-    "checked": false
+    "checked": true
   },
   {
     "code": "phot",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PI",
     "amount": 31,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PI0",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PI2",
     "amount": 274,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIB",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIG01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIG01_HHAU",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIG01_HHCA",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIG01_HHCH",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIG01_HHSG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIGGY",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH04",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH05",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH06",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH07",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH08",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH09",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH10",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH11",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH13",
     "amount": 13,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH14",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIH15",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIKA",
     "amount": 146,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIKACHU",
     "amount": 28,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL00",
     "amount": 15,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL04",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL05",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL06",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL07",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL08",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL11",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIL12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PINGPONG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PINK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PINKIE",
     "amount": 58,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR01",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR04",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR05",
     "amount": 10,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR06",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR07",
     "amount": 47,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR09",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR10",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR11",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR12",
     "amount": 75,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR13",
     "amount": 7,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR14",
     "amount": 29,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR_HHCA",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR_HHCH",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIR_HHUK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "pixels_brandnew",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIZMA",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIZZA",
     "amount": 116,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PIZZASLICE",
     "amount": 126,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PKMN",
     "amount": 33,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLATZHALTER",
     "amount": 36,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLINFA",
     "amount": 186,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLOTT",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLT01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLT02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLT03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLT04",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLT05",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ01",
     "amount": 53,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ03",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ04",
     "amount": 139,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ05",
     "amount": 4,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ06",
     "amount": 4,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ07",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ08",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ09",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ10",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ11",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ13",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ14",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ15",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ16",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ17",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ18",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ19",
     "amount": 32,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ20",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ21",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ22",
     "amount": 13,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ23",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ24",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ25",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ26",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PLZ27",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PN1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PNT01",
     "amount": 1,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PNT02",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POG01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POGU",
     "amount": 51,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POK",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POK_1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POKE1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POKE2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POKE3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POLEN",
     "amount": 152,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POLICE",
     "amount": 2,
-    "checked": false
+    "checked": true
   },
   {
     "code": "poop1",
     "amount": 166,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POP",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POPSICLE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PORNO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "PORTUGAL",
     "amount": 20,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW16",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_10",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_11",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_12",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_13",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_14",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_15",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_16",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_17",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_18",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_187",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_187a",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_2",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_20",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_2018",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_2JAHREFUN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_3JAHREFUN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_4",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_5",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_6",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_7",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_7_",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_8",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_9",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ABACCO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ADV",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ADVE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_Ametyst",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_AquamarinIgel",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ARMEE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ARSC",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_AUF",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_AUGEN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_AUOZ",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BAMBI1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BARC",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_Barrett",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BDAY",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BERG",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BLAUBEEREX",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BlauerIgel",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BMW",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BOT",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BRUCE_SPRINGSTEEN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BUILD",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BUILDE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_BVB01",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CALE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CALE1",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CALEFAN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CASINOF",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CHI",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CHO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CHOR",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CitrinIgel",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_CO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_COLA3",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_COLON",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_COLONI",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_COMMERCE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_Conan",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DANKE",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DEUT",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DI",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DI.",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DILOPHOSAURUS",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DISNEY",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DJ",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DJ_PIX",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DOPPBOY",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DREI",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DUB",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_DUBR",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ECOM",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_ESSEN",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_extraneous",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_Ezi",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_EZIO",
     "amount": null,
-    "checked": false
+    "checked": true
   },
   {
     "code": "POW_Ezreal",
