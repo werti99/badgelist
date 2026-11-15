@@ -154420,12 +154420,32 @@
     "checked": false
   },
   {
+    "code": "WSH06",
+    "amount": null,
+    "checked": false
+  },
+  {
     "code": "WSH07",
     "amount": null,
     "checked": false
   },
   {
+    "code": "WSH08",
+    "amount": null,
+    "checked": false
+  },
+  {
     "code": "WSH09",
+    "amount": null,
+    "checked": false
+  },
+  {
+    "code": "WSH10",
+    "amount": null,
+    "checked": false
+  },
+  {
+    "code": "WSH11",
     "amount": null,
     "checked": false
   },
